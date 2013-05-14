@@ -1,4 +1,5 @@
-= form_for MadLib.new do |f|
-  = f.label :text
-  = f.text_area :text
-  = f.submit 'Create'
+.new-mad-lib
+  = form_for MadLib.new, :html => {:class => 'form-stacked'} do |f|
+    = f.label :text, 'Mad Lib Body'
+    = f.text_area :text
+    = f.submit 'Create'

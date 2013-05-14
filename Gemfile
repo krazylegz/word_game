@@ -49,3 +49,6 @@ group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
 end
+
+# "Pretty" things up
+gem 'bootstrap-sass', '~> 2.3.1.0'
