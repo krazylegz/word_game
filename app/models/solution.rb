@@ -8,6 +8,8 @@ class Solution
   def fill_field(label, values)
     @hashes = self.mad_lib.hashes
     @hashes[label] = values[:with]
+    MadLibField.create(:name => label.split(/ \(/)[0].split(/,/)[0])
+    MadLibTerm.create(:name => values[:with])
   end
 
   def resolve
