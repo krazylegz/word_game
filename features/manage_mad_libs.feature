@@ -96,7 +96,6 @@ Feature: Manage mad_libs
   ### STOP Here unless you want bonus points! ###
   ###############################################
 
-  @wip
   Scenario: Create a madlib via web
     Given I am on the home page
     When I fill in the text:
@@ -121,7 +120,6 @@ Feature: Manage mad_libs
       I walked the dog. It was exciting.
       """
 
-  @wip
   Scenario: Create a complicated madlib via web
     Given I am on the home page
     When I fill in the text:
