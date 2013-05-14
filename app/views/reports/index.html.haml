@@ -1,7 +1,18 @@
-%table.statistics.table
-  - @fields.each do |name, count|
-    %tr
-      %td #{name.pluralize}: #{count}
-  - @terms.each do |name, count|
-    %tr
-      %td #{name}: #{count}
+.reporting
+  %h5 Reporting
+  %table.statistics.table
+    %thead
+      %tr
+        %th Fields
+    - @fields.each do |name, count|
+      %tr
+        %td #{name.pluralize}: #{count}
+  %table.statistics.table
+    %thead
+      %tr
+        %th Terms
+    - @terms.each do |name, count|
+      %tr
+        %td #{name}: #{count}
+
+  = link_to "Create a mad lib?", new_mad_lib_path
