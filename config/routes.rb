@@ -55,4 +55,10 @@ Madlibs::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+  # Root goes to a new MadLib form
+  root :to => 'mad_libs#new'
+
+  resources :mad_libs, :only => [:new, :create]
+  resources :solutions, :only => :create
 end

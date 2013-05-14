@@ -1,0 +1,7 @@
+New Mad Lib created
+= form_for :solution, :url => solutions_path do |f|
+  = hidden_field_tag :mad_lib_text, @mad_lib.text
+  - @mad_lib.hashes.each do |field, value|
+    = f.label field
+    = f.text_field field
+  = f.submit 'Fill In'
