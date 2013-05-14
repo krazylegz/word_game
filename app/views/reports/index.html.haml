@@ -1,0 +1,5 @@
+%ul.statistics
+  - @fields.each do |name, count|
+    %li #{name.pluralize}: #{count}
+  - @terms.each do |name, count|
+    %li #{name}: #{count}

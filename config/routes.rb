@@ -61,4 +61,5 @@ Madlibs::Application.routes.draw do
 
   resources :mad_libs, :only => [:new, :create]
   resources :solutions, :only => :create
+  resources :reports, :only => :index
 end
