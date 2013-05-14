@@ -42,8 +42,8 @@ group :development do
 end
 
 group :test do
-  gem 'capybara'
-  gem 'cucumber-rails'
+  gem 'capybara', '>= 1.1.2'
+  gem 'cucumber-rails', '~> 1.3.1'
   gem 'database_cleaner'
   gem 'guard-cucumber'
   gem 'rspec-rails'
