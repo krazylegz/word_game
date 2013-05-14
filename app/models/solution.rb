@@ -5,10 +5,6 @@ class Solution
     self.mad_lib = mad_lib
   end
 
-  def create
-    self
-  end
-
   def fill_field(label, values)
     @hashes = self.mad_lib.hashes
     @hashes[label] = values[:with]
