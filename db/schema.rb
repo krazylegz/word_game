@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130513232240) do
+ActiveRecord::Schema.define(:version => 20130514052055) do
+
+  create_table "mad_lib_fields", :force => true do |t|
+    t.string "name"
+  end
+
+  create_table "mad_lib_terms", :force => true do |t|
+    t.string "name"
+  end
 
   create_table "mad_libs", :force => true do |t|
     t.text "text"
