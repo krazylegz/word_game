@@ -48,6 +48,7 @@ group :test do
   gem 'guard-cucumber'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'faker'
 end
 
 # "Pretty" things up
