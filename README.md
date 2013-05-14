@@ -23,7 +23,7 @@ exec cucumber` depending on your particular environment.
 Make the tests pass. Good luck! :)
 
 # Heroku (Production)
-Visit on [Heroku][2]
+Visit on [Heroku][2].
 
 [1]: http://rvm.io
 [2]: http://word-game.herokuapp.com
