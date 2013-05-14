@@ -5,7 +5,6 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
 gem 'haml'
 
 # Gems used only for assets and not required
@@ -39,6 +38,7 @@ gem 'debugger'
 
 group :development do
   gem 'annotate'
+  gem 'sqlite3'
 end
 
 group :test do
@@ -52,3 +52,8 @@ end
 
 # "Pretty" things up
 gem 'bootstrap-sass', '~> 2.3.1.0'
+
+# Postgres for Heroku
+group :production do
+  gem 'pg'
+end
